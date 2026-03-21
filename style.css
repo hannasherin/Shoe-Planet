@@ -7,6 +7,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 30px;
     border: 2px solid rgb(233, 233, 192);
     
@@ -25,13 +26,322 @@ nav ul li{
 nav a{
   text-decoration: none;
 }
-.img1{
+img .login{
+  width: 35px;
+}
+section{
+    margin: 10px;
+}
+ 
+/* section 1 */
+
+.sec1{
     background-image: url("assets/bg-img1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     padding: 10px;
     margin-top: 30px;
+   
+}
+.firstsec{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.firstsec p{
+    color: rgb(196, 3, 3);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 3px 3px gray;
+    animation: slide 2s 3 ;
+
+}
+@keyframes slide{
+    from{
+        transform: translate(100%);
+    }
+}
+
+/* section 2  */
+.sec2{
+   
+    width: 100%;
+    height: 60vh;
+    margin-top: 30px;
+    
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333; /* Dark color to ensure it's visible */
+  margin: 30px 0;
+}
+
+
+.hr{
+  margin-top: 80px;
+  border: 0;
+  height: 1px;
+  background: #333;
+}
+.cards{
+   display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    height: 700px;
+    flex-wrap: wrap;
+    margin: 30px;
+    flex-direction: row;
+}
+.box{
+    padding: 3px;
+    width: 250px;
+    height: 350px;
+    background-color: rgb(250, 246, 246);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    transition: transform .5s;
+     flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  /* image style  */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 6px;
+
+}
+
+ .sec2 img {
+    height: 200px;
+    width: 230px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    
+   
+}
+
+p {
+    padding: 3px;
+}
+
+figcaption {
+
+    font-family: cursive;
+    font-size: 20px;
+ }
+
+.btn {
+    margin: 5px;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 10px;
+    border: solid rgb(250, 229, 109);
+    color: white;
+    font-size: 15px;
+}
+
+.btn:hover {
+    border: none;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+/* section 3 */
+
+.sec3{
+     width: 100%;
+    height: 60vh;
+    margin-top: 30px;
+   
+}
+.sec3 img {
+    height: 200px;
+    width: 230px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+
+
+/* sec 4 */
+.grid-container {
+  display: grid;
+  /* Creates two columns of equal width (1 fraction each) */
+  grid-template-columns: 1fr 1fr; 
+  height: 500px;
+  gap: 10px; /* Change to 10px if you want a gap between them */
+  
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Backgrounds - Using placeholders for Women and Men */
+.women-box {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/women-img.png');
+  background-color: #e0e0e0; /* Fallback color */
+}
+
+.men-box {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/Men-Shoe.png');
+  background-color: #d0d0d0; /* Fallback color */
+}
+
+.shop-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.text{
+    text-decoration: none;
+    color: white;
+}
+
+.women-box:hover h2{
+    cursor: pointer;
+    color: black;
+    
+}
+
+
+/* section 5 */
+
+.shop-by-category {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  /* Creates 4 columns that take up equal space */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  height: 300px;
+  
+  margin-top: 20px;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect like modern e-commerce sites */
+.category-card:hover img {
+  transform: scale(1.05);
+}
+
+.category-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-width: 120px;
+}
+
+/* footer  */
+.site-footer {
+  background-color: #f7ecec; /* Light grey background */
+  padding: 60px 20px;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+.footer-container {
+  display: grid;
+  /* Creates 3 columns: 1fr for the links, 2fr for the wider newsletter */
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #000;
+}
+
+.sub-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.sub-form button {
+  padding: 10px 15px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
 }
