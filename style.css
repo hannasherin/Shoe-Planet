@@ -149,7 +149,7 @@ p {
 figcaption {
 
     font-family: cursive;
-    font-size: 20px;
+    font-size: 15px;
  }
 
 .btn {
@@ -291,14 +291,14 @@ figcaption {
 
 /* footer  */
 .site-footer {
-  background-color: #f7ecec; /* Light grey background */
+  background-color: #f7ecec; 
   padding: 60px 20px;
   color: #333;
   border-top: 1px solid #ddd;
 }
 .footer-container {
   display: grid;
-  /* Creates 3 columns: 1fr for the links, 2fr for the wider newsletter */
+  /* Creates 3 columns: 1fr for the links, 2fr ,1fr */
   grid-template-columns: 1fr 2fr 1fr;
   gap: 40px;
   max-width: 1200px;
@@ -345,3 +345,44 @@ figcaption {
   cursor: pointer;
   margin-top: 10px;
 }
+
+/* women page,men page, accessories page  */
+
+section .wo-men{
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+.wo-men-cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 20px;  
+ 
+ 
+}
+.wo-menchap-box{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+   border: solid  white;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+ 
+}
+.wo-menchap-box img{
+  width: 180px;
+  height: 200px;
+  display: block;
+  transition: all 0.3s ease;
+}
+.wo-menchap-box:hover img{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+
+
