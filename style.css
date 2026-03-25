@@ -5,6 +5,10 @@
     
     
 }
+div .container{
+    max-width: 100%;
+    box-sizing: border-box;
+}
 header{
     width: 100%;
     position: sticky;
@@ -56,7 +60,7 @@ section{
 /* section 1 */
 
 .sec1{
-    background-image: url("assets/bg-img1.png");
+    background-image: url("assets/index-img/bg-img1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -269,12 +273,12 @@ figcaption {
 
 /* Backgrounds - Using placeholders for Women and Men */
 .women-box {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/women-img.png');
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/index-img/women-img.png');
   background-color: #e0e0e0; /* Fallback color */
 }
 
 .men-box {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/Men-Shoe.png');
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/index-img/Men-Shoe.png');
   background-color: #d0d0d0; /* Fallback color */
 }
 
